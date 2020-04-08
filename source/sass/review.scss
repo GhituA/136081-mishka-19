@@ -1,0 +1,51 @@
+.review {
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+}
+
+.review__title {
+  margin-bottom: 38px;
+}
+
+.review__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.review__text {
+  margin-bottom: 38px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__user {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.review__hash {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.review__arrows {
+  display: flex;
+}
+
+.review__arrow {
+  display: block;
+  margin-bottom: 38px;
+  width: 129px;
+  height: 50px;
+  border: 1px solid #ececec;
+  background: transparent;
+  &--next {
+    flex-grow: 1;
+    border-left: 0;
+  }
+}
