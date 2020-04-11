@@ -1,0 +1,64 @@
+.about {
+  padding: 34px 30px;
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__item {
+  position: relative;
+  padding-top: 90px;
+
+  font-size: $medium;
+  line-height: 20px;
+  font-weight: bold;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: 55px;
+    background-repeat: no-repeat;
+  }
+
+  &--materials::before {
+    width: 32px;
+    height: 37px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--style::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes::before {
+    width: 34px;
+    height: 27px;
+    left: 7px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade::before {
+    width: 35px;
+    height: 34px;
+    left: 3px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--native::before {
+    width: 55px;
+    height: 23px;
+    left: -6px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    width: 33px;
+    height: 32px;
+    left: 3px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
