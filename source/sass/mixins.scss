@@ -1,0 +1,11 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+@mixin nav-shadow {
+  box-shadow: 0 1px 0 $gray--border, inset 0 -1px 0 $gray--border;
+}
+border-bottom: 1px solid $gray--border;
+*/

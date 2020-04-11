@@ -5,26 +5,25 @@
 
 .cart-popup__title {
   margin: 0 25px 0;
-  font-size: 25px;
+  font-size: $large;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000000;
+  color: $black;
 }
 
 .cart-popup__text {
   display: block;
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: $small;
   line-height: 30px;
 }
 
 .cart-popup__list {
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   margin: 0 0 30px;
-  padding: 0;
-  list-style: none;
 }
 
 .cart-popup__item label {
@@ -32,7 +31,7 @@
   display: block;
   padding: 18px 0;
   width: 80px;
-  font-size: 17px;
+  font-size: $medium;
   line-height: 17px;
   font-weight: bold;
 
@@ -43,22 +42,20 @@
 .cart-popup__input + label::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
-
+  top: 0;
+  left: 0;
   width: 80px;
   height: 50px;
-  border: 2px solid #ececec;
+  border: 2px solid $gray--border;
 }
 
 .cart-popup__input:checked + label::before {
-  border: 2px solid #63d1bb;
+  border: 2px solid $green;
 }
-
 
 .cart-popup__button {
   width: 100%;
-  color: #ffffff;
-  background-color:  #63d1bb;
+  color: $white;
+  background-color: $green;
   border: 0;
 }

@@ -1,0 +1,16 @@
+.page-footer {
+  padding: 25px 30px;
+  background-color: $gray--bg;
+}
+
+.page-footer__social {
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px 0;
+}

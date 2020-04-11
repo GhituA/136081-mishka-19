@@ -1,0 +1,41 @@
+.categories__list {
+  @include list-reset;
+}
+
+.categories__link {
+  position: relative;
+  display: block;
+  padding: 27px 130px 27px 30px;
+
+  font-size: $big;
+  line-height: 24px;
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  background-color: $green;
+}
+
+.categories__link::after {
+  content: "  ";
+  position: absolute;
+  width: 40px;
+  height: 62px;
+  right: 36px;
+  top: 22px;
+
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+
+.categories__link--dark {
+  background-color: $green--dark;
+}
+
+.categories__link--dark::after {
+  width: 60px;
+  height: 60px;
+  right: 27px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+}
