@@ -1,6 +1,18 @@
 .container {
+  width: $mobile-width;
   margin: 0 auto;
-  width: 320px;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+  }
 }

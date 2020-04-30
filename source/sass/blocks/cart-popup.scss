@@ -1,6 +1,23 @@
 .cart-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -160px;
   padding: 36px 30px 46px;
   text-align: center;
+
+  border: 1px solid #c6c6c6;
+  background-color: $white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 90px;
+    margin-left: -283px;
+    width: 566px;
+  }
 }
 
 .cart-popup__title {
@@ -10,6 +27,13 @@
   text-transform: uppercase;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .cart-popup__text {
@@ -17,6 +41,11 @@
   margin-bottom: 30px;
   font-size: $small;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    font-size: $medium;
+  }
 }
 
 .cart-popup__list {
@@ -24,6 +53,10 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 17px;
+  }
 }
 
 .cart-popup__item label {
@@ -37,6 +70,11 @@
 
   cursor: pointer;
   user-select: none;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 50px;
+  }
 }
 
 .cart-popup__input + label::before {
@@ -47,6 +85,10 @@
   width: 80px;
   height: 50px;
   border: 2px solid $gray--border;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
 }
 
 .cart-popup__input:checked + label::before {
@@ -54,8 +96,14 @@
 }
 
 .cart-popup__button {
-  width: 100%;
+  width: 260px;
+  margin: 0 auto;
   color: $white;
   background-color: $green;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    padding: 16px 0;
+  }
 }

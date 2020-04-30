@@ -4,3 +4,12 @@
   font-weight: bold;
   color: $black;
 }
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 0;
+  text-decoration: none;
+}
