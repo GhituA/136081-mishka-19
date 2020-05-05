@@ -1,17 +1,15 @@
 .about {
-  padding: 0 30px;
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
     margin-bottom: 23px;
     padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
     padding: 0 225px;
     padding-right: 270px;
-    margin-bottom: 31px;
   }
 }
 
@@ -19,10 +17,12 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+
   padding-top: 34px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+
     padding-top: 52px;
   }
 
@@ -33,6 +33,7 @@
 
 .about__item {
   position: relative;
+
   padding-top: 54px;
   padding-bottom: 29px;
 
@@ -55,6 +56,7 @@
 .about__item::before {
   content: " ";
   position: absolute;
+
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -66,10 +68,12 @@
   }
 
   &::before {
-    width: 32px;
-    height: 37px;
     left: 9px;
     top: 0;
+
+    width: 32px;
+    height: 37px;
+
     background-image: url("../img/icon-feature-flower.svg");
   }
 }
@@ -82,8 +86,10 @@
   &::before {
     top: 0;
     left: 2px;
+
     width: 47px;
     height: 27px;
+
     background-image: url("../img/icon-feature-money.svg");
   }
 }
@@ -96,6 +102,7 @@
   &::before {
     left: 9px;
     top: 5px;
+
     width: 34px;
     height: 27px;
 
@@ -111,6 +118,7 @@
   &::before {
     left: 2px;
     top: 5px;
+
     width: 35px;
     height: 34px;
 
@@ -126,6 +134,7 @@
   &::before {
     left: -7px;
     top: 5px;
+
     width: 55px;
     height: 23px;
 
@@ -141,6 +150,7 @@
   &::before {
     left: 2px;
     top: 0;
+
     width: 33px;
     height: 32px;
 

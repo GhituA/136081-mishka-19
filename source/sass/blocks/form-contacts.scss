@@ -1,6 +1,7 @@
 .form-contacts {
   @media (min-width: $tablet-width) {
     padding: 46px 0 40px;
+
     background-color: $gray--bg-light;
   }
 }
@@ -9,21 +10,23 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 217px;
-    margin-right: 50px;
+    padding-left: 167px;
     margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
-    margin-right: 225px;
+    padding-left: 175px;
+    margin-right: 175px;
   }
 }
 
 .form-contacts__field-name {
+  left: 0;
+
   @media (min-width: $desktop-width) {
     top: 20px;
-    left: 112px;
+    left: 62px;
+
     width: 114px;
 
     text-align: left;
@@ -43,29 +46,35 @@
 .form-contacts__input {
   position: relative;
   display: block;
+
   width: 100%;
   padding: 18px 0 14px;
 
   font-size: $big;
   line-height: 18px;
   color: $gray--text-30;
+
+
+  background-color: transparent;
   border: 0;
   border-bottom: 2px solid $black;
-  background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    font-size: $big;
     padding: 13px 0 14px;
     padding-left: 18px;
+
+    font-size: $big;
   }
 }
 
 .form-contacts__input--email {
   padding: 22px 0 16px;
+
   font-size: $medium;
 
   @media (min-width: $tablet-width) {
     padding-left: 18px;
+
     font-size: $big;
   }
 }

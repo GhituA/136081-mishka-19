@@ -2,10 +2,12 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    @include list-reset;
     position: absolute;
     z-index: 1;
     left: 50px;
     bottom: -42px;
+
     display: flex;
     flex-direction: row;
   }

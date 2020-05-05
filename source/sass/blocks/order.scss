@@ -1,15 +1,9 @@
-.order {
-  padding: 0 30px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
 .order__field {
   position: relative;
+
   margin: 0;
   padding: 0;
+
   border: 0;
 }
 
@@ -27,6 +21,7 @@
     position: absolute;
     top: 16px;
     left: 50px;
+
     width: 167px;
   }
 
@@ -40,7 +35,8 @@
   position: absolute;
   right: 0;
   top: 50%;
-  width: 198px;
+
+  width: 76%;
   height: 1px;
   margin-top: -1px;
 
@@ -53,23 +49,34 @@
 
 .order__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
   padding: 24px 0 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 50px;
-    padding-left: 217px;
-    padding-right: 50px;
+    padding-left: 167px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding-left: 175px;
+  }
+}
+
+.order__label br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .order__item {
   position: relative;
-  padding: 9px 0 14px;
+
+  padding-top: 9px;
+  padding-bottom: 14px;
   padding-left: 62px;
   padding-right: 20px;
 
@@ -87,6 +94,7 @@
 
 .order__label {
   display: block;
+
   font-size: $medium;
   line-height: 18px;
   font-weight: bold;
@@ -186,15 +194,12 @@
     justify-content: space-between;
     align-items: baseline;
 
-    margin-left: 50px;
-    margin-right: 50px;
     margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 225px;
-    margin-right: 225px;
-    width: 700px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
@@ -205,31 +210,32 @@
 }
 
 .order__input--area {
-  resize: none;
-  margin: 26px 0 10px;
-  padding: 15px;
   width: 100%;
   min-height: 142px;
+  margin: 29px 0 14px;
+  padding: 15px;
 
   font-size: $medium;
   line-height: 18px;
   color: $gray--text-30;
+
   border: 2px solid $gray--text;
+  resize: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
-    margin-left: 217px;
-    margin-right: 50px;
-    margin-bottom: 46px;
     width: 501px;
+    margin-top: 53px;
+    margin-left: 167px;
+    margin-bottom: 46px;
 
     font-size: $big;
   }
 
   @media (min-width: $desktop-width) {
     width: 700px;
-    margin-left: 225px;
-    margin-right: 225px;
+    min-height: 142px;
+    margin-left: 175px;
+    margin-right: 175px;
     margin-bottom: 42px;
   }
 }

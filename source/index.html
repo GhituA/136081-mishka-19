@@ -8,55 +8,54 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <div class="container">
+
       <header class="page-header">
 
-        <nav class="page-header__nav main-nav">
+          <nav class="page-header__nav main-nav">
+            <div class="main-nav__item page-header__logo-wrapper"> <!--main-nav__item-->
+              <span class="page-header__logo">
+                <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+                <img class="page-header__logo-image page-header__logo-image--tablet" src="../img/logo-tablet.svg" width="112" height="46" alt="Логотип интернет-магазина «Мишка»">
+                <img class="page-header__logo-image page-header__logo-image--desktop" src="../img/logo-desktop.svg" width="149" height="72" alt="Логотип интернет-магазина «Мишка»">
+              </span>
+              <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+            </div>
 
-          <div class="page-header__logo-wrapper">
-            <span class="page-header__logo">
-              <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
-              <img class="page-header__logo-image page-header__logo-image--tablet" src="../img/logo-tablet.svg" width="112" height="46" alt="Логотип интернет-магазина «Мишка»">
-              <img class="page-header__logo-image page-header__logo-image--desktop" src="../img/logo-desktop.svg" width="149" height="72" alt="Логотип интернет-магазина «Мишка»">
-            </span>
-            <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-          </div>
+            <ul class="main-nav__item site-list"><!--main-nav__item-->
+              <li class="site-list__item">
+                <a class="main-nav__link site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="main-nav__link site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+            <ul class="main-nav__item user-list"><!--main-nav__item-->
+              <li class="user-list__item">
+                <a class="main-nav__link user-list__link user-list__link--icon user-list__link--search" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item">
+                <a class="main-nav__link user-list__link user-list__link--icon user-list__link--cart" href="#">Корзина: <span class="js-cart">&nbsp;пока пуста</span></a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="main-nav__link user-list__link user-list__link--icon user-list__link--search" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="main-nav__link user-list__link user-list__link--icon user-list__link--cart" href="#">Корзина: <span class="js-cart">&nbsp;пока пуста</span></a>
-            </li>
-          </ul>
+            <ul class="promo-list"><!--main-nav__item-->
+              <li class="promo-list__item">
+                <a class="main-nav__link promo-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="promo-list__item">
+                <a class="main-nav__link promo-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__list promo-list">
-            <li class="promo-list__item">
-              <a class="main-nav__link promo-list__link" href="#">Новые поступления</a>
-            </li>
-            <li class="promo-list__item">
-              <a class="main-nav__link promo-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
+            <span class="main-nav__delivery">Бесплатная доставка по России</span>
+          </nav>
 
-          <span class="main-nav__delivery">Бесплатная доставка по России</span>
-
-        </nav>
       </header>
 
       <main class="page-main">
         <div class="page-main__head page-main__head--index">
-          <h1 class="page-main__title">Милые штуки ручной работы&nbsp;для дома</h1>
+          <h1 class="page-main__title">Милые штуки ручной<br> работы&nbsp;для дома</h1>
         </div>
 
         <section class="categories">
@@ -72,46 +71,48 @@
         </section>
 
         <section class="featured">
+          <div class="container">
+            <div class="featured__head">
+              <h2 class="featured__title section-title">Вязаные корзинки</h2>
+              <span class="featured__type">Товар недели</span>
+            </div>
 
-          <div class="featured__head">
-            <h2 class="featured__title section-title">Вязаные корзинки</h2>
-            <span class="featured__type">Товар недели</span>
+              <div class="featured__description">
+                <div class="featured__content">
+                  <p class="featured__text">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках, и трех размерах.</p>
+                  <table class="featured__table section-table">
+                    <tr class="featured__row section-table__row">
+                      <td class="featured__cell section-table__cell">Цвет:</td>
+                      <td class="section-table__cell">«Тиффани»/серый</td>
+                    </tr>
+                    <tr class="featured__row section-table__row">
+                      <td class="featured__cell section-table__cell">Диаметр:</td>
+                      <td class="section-table__cell">25 см</td>
+                    </tr>
+                    <tr class="featured__row section-table__row">
+                      <td class="featured__cell section-table__cell">Высота:</td>
+                      <td class="section-table__cell">15 см</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="featured__image-wrapper">
+                  <img class="featured__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки трех размеров">
+                  <img class="featured__image featured__image--tablet" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязаные корзинки трех размеров">
+                  <img class="featured__image featured__image--desktop" src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязаные корзинки трех размеров">
+                </div>
+              </div>
+
+              <div class="featured__order">
+                <span class="featured__price">Цена: 990 руб.</span>
+                <a href="#" class="featured__button button" href="#">Заказать</a>
+              </div>
           </div>
 
-            <div class="featured__description">
-              <div class="featured__content">
-                <p class="featured__text">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках, и трех размерах.</p>
-                <table class="featured__table section-table">
-                  <tr class="featured__row section-table__row">
-                    <td class="featured__cell section-table__cell">Цвет:</td>
-                    <td class="section-table__cell">«Тиффани»/серый</td>
-                  </tr>
-                  <tr class="featured__row section-table__row">
-                    <td class="featured__cell section-table__cell">Диаметр:</td>
-                    <td class="section-table__cell">25 см</td>
-                  </tr>
-                  <tr class="featured__row section-table__row">
-                    <td class="featured__cell section-table__cell">Высота:</td>
-                    <td class="section-table__cell">15 см</td>
-                  </tr>
-                </table>
-              </div>
-
-              <div class="featured__image-wrapper">
-                <img class="featured__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки трех размеров">
-                <img class="featured__image featured__image--tablet" src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязаные корзинки трех размеров">
-                <img class="featured__image featured__image--desktop" src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязаные корзинки трех размеров">
-              </div>
-            </div>
-
-            <div class="featured__order">
-              <span class="featured__price">Цена: 990 руб.</span>
-              <a href="#" class="featured__button button" href="#">Заказать</a>
-            </div>
 
         </section>
 
-        <section class="about">
+        <section class="about container">
           <h2 class="about__title section-title">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item about__item--materials">Экологически чистые&nbsp;материалы</li>
@@ -125,6 +126,7 @@
 
         <section class="review">
           <div class="review__main-wrapper">
+
             <div class="review__content-wrapper">
               <h2 class="review__title section-title">Отзывы</h2>
               <ul class="review__list">
@@ -145,12 +147,11 @@
               </div>
               <a class="review__button button" href="#">Написать</a>
             </div>
+
           </div>
         </section>
 
         <section class="contacts">
-
-
           <div class="contacts__wrapper">
             <h2 class="contacts__title">Контакты</h2>
             <table class="contacts__table">
@@ -178,61 +179,64 @@
       </main>
 
       <footer class="page-footer">
-
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина «Мишка»">
-        </a>
-
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <img src="img/icon-fb.svg" width="15" height="28" alt="Фейсбук">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <img src="img/icon-twitter.svg" width="23" height="20" alt="Твиттер">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
-            <span class="copyright__text">Разработано</span>
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        <div class="page-footer__wrapper container">
+          <a class="page-footer__logo">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина «Мишка»">
           </a>
-        </div>
 
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <img src="img/icon-fb.svg" width="15" height="28" alt="Фейсбук">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <img src="img/icon-twitter.svg" width="23" height="20" alt="Твиттер">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+              <span class="copyright__text">Разработано</span>
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
+        </div>
       </footer>
 
       <section class="cart-popup">
-        <h2 class="cart-popup__title">Добавить в&nbsp;корзину</h2>
-        <span class="cart-popup__text">Выберите размер:</span>
-        <form class="cart-popup__form add-cart" action="https://echo.htmlacademy.ru" method="get">
-          <ul class="cart-popup__list">
-            <li class="cart-popup__item">
-              <input class="visually-hidden cart-popup__input" id="size-small" type="radio" value="small" name="size" checked>
-              <label for="size-small">S</label>
-            </li>
-            <li class="cart-popup__item">
-              <input class="visually-hidden cart-popup__input" id="size-medium" type="radio" value="medium" name="size">
-              <label for="size-medium">M</label>
-            </li>
-            <li class="cart-popup__item">
-              <input class="visually-hidden cart-popup__input" id="size-large" type="radio" value="large" name="size">
-              <label for="size-large">L</label>
-            </li>
-          </ul>
-          <button class="cart-popup__button button" type="submit">Добавить</button>
-        </form>
+        <div class="cart-popup__container">
+          <h2 class="cart-popup__title">Добавить в&nbsp;корзину</h2>
+          <span class="cart-popup__text">Выберите размер:</span>
+          <form class="cart-popup__form add-cart" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="cart-popup__list">
+              <li class="cart-popup__item">
+                <input class="visually-hidden cart-popup__input" id="size-small" type="radio" value="small" name="size" checked>
+                <label for="size-small">S</label>
+              </li>
+              <li class="cart-popup__item">
+                <input class="visually-hidden cart-popup__input" id="size-medium" type="radio" value="medium" name="size">
+                <label for="size-medium">M</label>
+              </li>
+              <li class="cart-popup__item">
+                <input class="visually-hidden cart-popup__input" id="size-large" type="radio" value="large" name="size">
+                <label for="size-large">L</label>
+              </li>
+            </ul>
+            <button class="cart-popup__button button" type="submit">Добавить</button>
+          </form>
+        </div>
+
       </section>
-    </div>
+
   </body>
 </html>

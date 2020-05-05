@@ -1,9 +1,12 @@
 .page-footer {
+  background-color: $gray--bg;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
 
   padding: 25px 30px;
-  background-color: $gray--bg;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -38,7 +41,7 @@
 
 .page-footer__copyright {
   width: 182px;
-  padding-top: 22px;
+  padding-top: 18px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
