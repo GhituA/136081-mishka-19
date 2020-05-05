@@ -1,11 +1,73 @@
+.categories {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.categories::after {
+  @media (min-width: $tablet-width) {
+    content: "  ";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    width: 100%;
+    height: 22px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat;
+    background-size: $tablet-width;
+    background-position: 50% top;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -5px;
+    background-size: 1250px;
+  }
+}
+
 .categories__list {
   @include list-reset;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 668px;
+    margin-top: -120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.categories__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .categories__link {
   position: relative;
-  display: block;
-  padding: 27px 130px 27px 30px;
+  display: flex;
+  align-items: center;
+  height: 103px;
+
+  padding-left: 30px;
+  padding-right: 50%;
 
   font-size: $big;
   line-height: 24px;
@@ -13,19 +75,51 @@
   color: $white;
   text-decoration: none;
   background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    height: 118px;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 65%;
+  }
 }
 
 .categories__link::after {
   content: "  ";
   position: absolute;
+  right: 36px;
+  top: 21%;
+
   width: 40px;
   height: 62px;
-  right: 36px;
-  top: 22px;
 
   background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
   opacity: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 25%;
+  }
+}
+
+.categories__link:hover,
+.categories__link:focus {
+  background-color: $green--lighten;
+  transition: 0.2s;
+}
+
+.categories__link:hover::after,
+.categories__link:focus::after {
+  opacity: 70%;
+}
+
+.categories__link:active::after {
+  opacity: 30%;
 }
 
 .categories__link--dark {
@@ -33,9 +127,15 @@
 }
 
 .categories__link--dark::after {
+  right: 27px;
+
   width: 60px;
   height: 60px;
-  right: 27px;
+
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    right: 35px;
+  }
 }

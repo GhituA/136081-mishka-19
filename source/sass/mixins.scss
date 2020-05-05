@@ -3,9 +3,24 @@
   padding: 0;
   list-style: none;
 }
-/*
-@mixin nav-shadow {
-  box-shadow: 0 1px 0 $gray--border, inset 0 -1px 0 $gray--border;
+
+@mixin nav-link {
+  position: relative;
+
+  display: flex;
+  width: $mobile-width;
+  padding: 27px 0;
+  padding-left: 76px;
+
+  font-size: $medium;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
-border-bottom: 1px solid $gray--border;
-*/

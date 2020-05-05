@@ -1,5 +1,6 @@
 .section-table {
   width: 100%;
+
   border-collapse: collapse;
 }
 
@@ -8,11 +9,12 @@
 }
 
 .section-table__cell {
-  padding: 10px 0 5px;
+  padding: 9px 0 7px;
 }
 
 .section-table__link {
   padding-bottom: 5px;
+
   text-decoration: none;
   color: $gray--text;
   border-bottom: 1px solid $green--lightest;

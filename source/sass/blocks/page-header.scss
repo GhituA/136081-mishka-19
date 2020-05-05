@@ -1,29 +1,99 @@
 .page-header {
-  width: 320px;
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $gray--border;
+  }
 }
 
-.page-header__wrapper {
+.page-header__logo-wrapper {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 22px 30px;
+  padding: 21px 30px;
 
-  box-shadow: 0 1px 0 $gray--border, inset 0 -1px 0 $gray--border;
+  border-top: 1px solid $gray--border;
+  border-bottom: 1px solid $gray--border;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    width: 370px;
+    padding: 0;
+    padding-left: 48px;
+
+    border-top: none;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 290px;
+    padding-left: 40px;
+  }
 }
 
 .page-header__logo {
-  flex-grow: 1;
+  display: flex;
+  width: 86px;
+  height: 35px;
+
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+a.page-header__logo:hover,
+a.page-header__logo:focus {
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+a.page-header__logo:active {
+  opacity: 30%;
 }
 
 .page-header__logo-image {
-  display: block;
-  margin-left: 85px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .page-header__toggle {
+  position: absolute;
+  right: 30px;
+  top: 28px;
   width: 21px;
   height: 20px;
-  margin: 0;
-  padding: 0;
 
   background-image: url("../img/icon-menu-close.svg");
   background-color: transparent;
@@ -32,5 +102,9 @@
 
   &--open {
     background-image: url("../img/icon-menu-open.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
