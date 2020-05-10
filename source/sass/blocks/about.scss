@@ -18,12 +18,12 @@
   display: flex;
   flex-wrap: wrap;
 
-  padding-top: 34px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
 
-    padding-top: 52px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {

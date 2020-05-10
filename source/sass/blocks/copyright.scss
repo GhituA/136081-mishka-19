@@ -1,15 +1,25 @@
-.copyright__text {
-  font-size: $big;
-  line-height: 20px;
-  font-weight: bold;
-  color: $black;
-}
-
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  color: $green;
   line-height: 0;
   text-decoration: none;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  color: $green--darken;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  font-size: $big;
+  line-height: 20px;
+  font-weight: bold;
+  color: $black;
 }

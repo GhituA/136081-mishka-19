@@ -6,6 +6,7 @@
 
 .page-header__logo-wrapper {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,19 +27,19 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+
     width: 290px;
     padding-left: 40px;
   }
 }
 
 .page-header__logo {
-  display: flex;
+  line-height: 0;
+}
+
+.page-header__logo img {
   width: 86px;
   height: 35px;
-
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
 
   @media (min-width: $tablet-width) {
     width: 112px;
@@ -51,47 +52,22 @@
   }
 }
 
-a.page-header__logo:hover,
-a.page-header__logo:focus {
+a.page-header__logo[href]:hover,
+a.page-header__logo[href]:focus {
   opacity: 60%;
   cursor: pointer;
   transition: 0.2s;
 }
 
-a.page-header__logo:active {
+a.page-header__logo[href]:active {
   opacity: 30%;
-}
-
-.page-header__logo-image {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
 }
 
 .page-header__toggle {
   position: absolute;
   right: 30px;
   top: 28px;
+
   width: 21px;
   height: 20px;
 

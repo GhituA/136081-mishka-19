@@ -99,10 +99,21 @@
   line-height: 18px;
   font-weight: bold;
   color: $black;
+  user-select: none;
 
   @media (min-width: $tablet-width) {
     font-size: $big;
   }
+}
+
+.order__input:focus {
+  outline: none;
+
+  background-color: transparent;
+}
+
+.order__input:focus + label {
+  color: $green--darken;
 }
 
 .order__input + label::before {
@@ -118,6 +129,15 @@
   color: #000000;
 
   opacity: 0.5;
+}
+
+.order__input + label:hover::before,
+.order__input + label:focus::before {
+  border: 2px solid $green--lightest;
+}
+
+.order__input + label:active::before {
+  border: 2px solid $gray--text-30;
 }
 
 .order__input--radio + label::before {
@@ -185,6 +205,11 @@
   }
 }
 
+.order__input::placeholder {
+  color: $gray--text-30;
+  opacity: 1;
+}
+
 .order__wrapper {
   margin-bottom: 56px;
 
@@ -217,14 +242,14 @@
 
   font-size: $medium;
   line-height: 18px;
-  color: $gray--text-30;
+  color: $gray--text;
 
   border: 2px solid $gray--text;
   resize: none;
 
   @media (min-width: $tablet-width) {
     width: 501px;
-    margin-top: 53px;
+    margin-top: 50px;
     margin-left: 167px;
     margin-bottom: 46px;
 
@@ -234,10 +259,17 @@
   @media (min-width: $desktop-width) {
     width: 700px;
     min-height: 142px;
+    margin-top: 49px;
     margin-left: 175px;
     margin-right: 175px;
     margin-bottom: 42px;
   }
+}
+
+.order__input--area:hover,
+.order__input--area:focus {
+  border: 2px solid $green--lightest;
+  outline: none;
 }
 
 .order__legend {
@@ -250,6 +282,10 @@
   @media (min-width: $tablet-width) {
     font-size: $medium;
   }
+}
+
+.order__legend sup {
+  top: 0;
 }
 
 .order__button {

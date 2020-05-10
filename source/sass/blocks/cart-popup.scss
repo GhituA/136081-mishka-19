@@ -2,6 +2,7 @@
   display: none;
 
   position: fixed;
+  z-index: 2;
   top: 50%;
   left: 50%;
 
@@ -111,6 +112,11 @@
   @media (min-width: $tablet-width) {
     width: 112px;
   }
+}
+
+.cart-popup__input:hover + label::before,
+.cart-popup__input:focus + label::before {
+  border: 2px solid $gray--text-30;
 }
 
 .cart-popup__input:checked + label::before {

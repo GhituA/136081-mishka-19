@@ -44,7 +44,7 @@
 
   font-size: $medium;
   line-height: 18px;
-  color: $gray--text-30;
+  color: $gray--text;
   border: 0;
   border-bottom: 2px solid $black;
 
@@ -54,4 +54,10 @@
 
     font-size: $big;
   }
+}
+
+.user__input:hover,
+.user__input:focus {
+  border-bottom: 2px solid $green--lightest;
+  outline: none;
 }
