@@ -63,6 +63,11 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -194,4 +199,13 @@
     background-position: center;
     border-left: none;
   }
+}
+
+.review__arrow:hover,
+.review__arrow:focus {
+  opacity: 0.6;
+}
+
+.review__arrow:active {
+  opacity: 0.3;
 }

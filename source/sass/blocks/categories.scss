@@ -17,7 +17,7 @@
   @media (min-width: $tablet-width) {
     content: "  ";
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 0;
 
     width: 100%;
@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: -5px;
+    bottom: -2px;
     background-size: 1250px;
   }
 }
@@ -61,13 +61,10 @@
 }
 
 .categories__link {
-  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 103px;
-
-  padding-left: 30px;
-  padding-right: 50%;
 
   font-size: $big;
   line-height: 24px;
@@ -77,6 +74,8 @@
   background-color: $green;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+
     height: 118px;
     padding-left: 36px;
 
@@ -84,58 +83,91 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-right: 65%;
-  }
-}
-
-.categories__link::after {
-  content: "  ";
-  position: absolute;
-  right: 36px;
-  top: 21%;
-
-  width: 40px;
-  height: 62px;
-
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  opacity: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: 25%;
+  &--dark {
+    background-color: $green--dark;
   }
 }
 
 .categories__link:hover,
 .categories__link:focus {
+  margin-top: -5px;
+  height: 123px;
+
   background-color: $green--lighten;
   transition: 0.2s;
 }
 
-.categories__link:hover::after,
-.categories__link:focus::after {
-  opacity: 70%;
+.categories__link--dark:hover,
+.categories__link--dark:focus {
+  background-color: $green--darken;
 }
 
-.categories__link:active::after {
-  opacity: 30%;
+.categories__link:active {
+  color: $white-30;
 }
 
-.categories__link--dark {
-  background-color: $green--dark;
+.categories__text {
+  position: relative;
+
+  display: block;
+  width: 320px;
+  padding: 0 30px;
+  padding-right: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 526px;
+  }
 }
 
-.categories__link--dark::after {
+.categories__text::after {
+  content: "  ";
+  position: absolute;
+  right: 36px;
+  top: 50%;
+
+  width: 40px;
+  height: 62px;
+  margin-top: -28px;
+
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    right: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 36px;
+  }
+}
+
+.categories__link:hover .categories__text::after,
+.categories__link:focus .categories__text::after {
+  opacity: 0.7;
+}
+
+.categories__link:active .categories__text::after {
+  opacity: 0.3;
+}
+
+.categories__text--dark::after {
   right: 27px;
 
   width: 60px;
   height: 60px;
+  margin-top: -30px;
 
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    right: 35px;
+    right: 38px;
+    margin-top: -28px;
   }
 }

@@ -5,8 +5,8 @@
     @include list-reset;
     position: absolute;
     z-index: 1;
-    left: 50px;
-    bottom: -42px;
+    left: 30px;
+    bottom: -62px;
 
     display: flex;
     flex-direction: row;
@@ -17,8 +17,8 @@
   @include nav-link;
 
   @media (min-width: $desktop-width) {
-    margin-right: 60px;
-    padding: 0;
+    margin-right: 22px;
+    padding: 20px;
 
     font-size: $small;
     border: 0;

@@ -15,3 +15,14 @@
 
   cursor: pointer;
 }
+
+.button:hover,
+.button:focus {
+  color: $white;
+  background-color: $gray--text;
+  transition: 0.2s;
+}
+
+.button:active {
+  color: $white-30;
+}

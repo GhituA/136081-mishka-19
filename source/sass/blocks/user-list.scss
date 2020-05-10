@@ -16,6 +16,7 @@
 .user-list__item {
   display: flex;
   justify-content: center;
+
   border-bottom: 1px solid $gray--border;
 
   @media (min-width: $tablet-width) {
@@ -24,55 +25,53 @@
 }
 
 .user-list__link {
+  position: relative;
+
   @include nav-link;
-}
-
-.user-list__link--icon::before {
-  content: " ";
-  position: absolute;
-  top: 31px;
-  left: 32px;
-  height: 19px;
-
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: $tablet-width) {
-    top: 36px;
+    min-height: 89px;
   }
 }
 
 .user-list__link--search {
   @media (min-width: $tablet-width) {
-    min-height: 89px;
     padding: 32px 41px;
 
     font-size: 0;
     border-left: 1px solid $gray--border;
     border-right: 1px solid $gray--border;
   }
-
-  &::before {
-    width: 18px;
-
-    background-image: url("../img/icon-search.svg");
-  }
 }
 
 .user-list__link--cart {
   @media (min-width: $tablet-width) {
-    padding-right: 50px;
     padding-left: 82px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 51px;
     padding-left: 83px;
   }
+}
 
-  &::before {
-    width: 21px;
+.user-list__icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
 
-    background-image: url("../img/icon-cart.svg");
-  }
+  margin-top: -10px;
+
+  color: $gray--text;
+  opacity: 0.2;
+}
+
+.user-list__link:hover .user-list__icon,
+.user-list__link:focus .user-list__icon {
+  color: $green;
+  opacity: 1;
+}
+
+.user-list__link:active .user-list__icon {
+  opacity: 0.3;
 }
