@@ -1,4 +1,3 @@
-/* stylelint-disable */
 !function(root, factory) {
     "function" == typeof define && define.amd ? // AMD. Register as an anonymous module unless amdModuleId is set
     define([], function() {
@@ -122,4 +121,3 @@
     }
     return svg4everybody;
 });
-/* stylelint-enable */
