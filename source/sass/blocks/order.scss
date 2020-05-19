@@ -9,6 +9,8 @@
 
 .order__field-name {
   position: relative;
+
+  display: block;
   width: 100%;
 
   font-size: $medium;
@@ -125,12 +127,6 @@
   border: 2px solid $gray--text;
 }
 
-.order__input:disabled + label {
-  color: #000000;
-
-  opacity: 0.5;
-}
-
 .order__input + label:hover::before,
 .order__input + label:focus::before {
   border: 2px solid $green--lightest;
@@ -138,6 +134,18 @@
 
 .order__input + label:active::before {
   border: 2px solid $gray--text-30;
+}
+
+.order__input:disabled + label,
+.order__input:checked:disabled + label {
+  color: $black;
+
+  opacity: 0.5;
+}
+
+.order__input:disabled + label:hover::before,
+.order__input:disabled + label:focus::before {
+  border: 2px solid $gray--text;
 }
 
 .order__input--radio + label::before {
@@ -237,7 +245,7 @@
 .order__input--area {
   width: 100%;
   min-height: 142px;
-  margin: 29px 0 14px;
+  margin: 25px 0 12px;
   padding: 15px;
 
   font-size: $medium;

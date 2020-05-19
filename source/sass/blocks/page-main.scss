@@ -32,10 +32,8 @@
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px auto;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-main__head--index {
+  @media (min-width: $tablet-width) {
     height: 746px;
     padding: 152px 5%;
 
@@ -47,12 +45,9 @@
       background-size: 1150px auto;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main__head--index {
+  @media (min-width: $desktop-width) {
     padding: 154px 23%;
-
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

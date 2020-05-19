@@ -72,11 +72,13 @@
 }
 
 .catalog__link--image {
-  width: 260px;
-  height: 195px;
-
   line-height: 0;
   background-color: $gray--border;
+}
+
+.catalog__image {
+  width: 260px;
+  height: 195px;
 
   @media (min-width: $tablet-width) {
     width: 334px;
