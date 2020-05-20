@@ -23,6 +23,7 @@ var navList = document.querySelector(".main-nav");
 var navBtn = document.querySelector(".page-header__toggle");
 
 navList.classList.add("main-nav--js");
+navBtn.classList.remove("page-header__toggle--hidden");
 navBtn.classList.add("page-header__toggle--open");
 
 navBtn.addEventListener("click", function () {

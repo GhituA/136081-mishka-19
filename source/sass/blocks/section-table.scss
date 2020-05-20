@@ -11,21 +11,3 @@
 .section-table__cell {
   padding: 9px 0 7px;
 }
-
-.section-table__link {
-  padding-bottom: 3px;
-
-  text-decoration: none;
-  color: $gray--text;
-  border-bottom: 1px solid $green--lightest;
-}
-
-.section-table__link:hover,
-.section-table__link:focus {
-  color: $green--darken;
-  border-bottom: 1px solid $green--darken;
-}
-
-.section-table__link:active {
-  opacity: 0.3;
-}

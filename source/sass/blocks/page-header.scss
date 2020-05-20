@@ -76,6 +76,10 @@ a.page-header__logo[href]:active {
   background-repeat: no-repeat;
   border: 0;
 
+  &--hidden {
+    display: none;
+  }
+
   &--open {
     top: 31px;
     background-image: url("../img/icon-menu-open.svg");
