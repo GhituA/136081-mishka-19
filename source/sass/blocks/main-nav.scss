@@ -16,6 +16,21 @@
   }
 }
 
+.main-nav--js .site-list,
+.main-nav--js .user-list,
+.main-nav--js .promo-list,
+.main-nav--js .main-nav__delivery, {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper--closed {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;

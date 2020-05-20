@@ -104,10 +104,9 @@
     background-image: url("../img/video-mobile@2x.jpg");
     background-size: 260px auto;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .production__video {
+
+  @media (min-width: $tablet-width) {
     width: 666px;
     height: 455px;
 
@@ -118,10 +117,9 @@
       background-size: 668px auto;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .production__video {
+
+  @media (min-width: $desktop-width) {
     width: 680px;
     height: 455px;
 

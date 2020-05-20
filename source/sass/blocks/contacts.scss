@@ -139,10 +139,8 @@
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 322px auto;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__map {
+  @media (min-width: $tablet-width) {
     margin-bottom: 55px;
 
     background-image: url("../img/map-tablet@1x.jpg");
@@ -152,10 +150,8 @@
       background-size: 768px auto;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contacts__map {
+  @media (min-width: $desktop-width) {
     width: 525px;
     margin-top: 9px;
     margin-bottom: 0;

@@ -5,12 +5,14 @@
     <title>Вязание товаров «Мишка» на заказ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <div class="page-header__logo-wrapper">
+        <div class="main-nav__item page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -31,7 +33,7 @@
         <ul class="main-nav__item user-list">
           <li class="user-list__item">
             <a class="main-nav__link user-list__link user-list__link--search" href="#">
-              <svg class="user-list__icon" width="17.6" height="17.6">
+              <svg class="user-list__icon" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
               <span class="user-list__search">Поиск по сайту</span>
@@ -46,7 +48,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list promo-list">
+        <ul class="main-nav__item promo-list">
           <li class="promo-list__item">
             <a class="main-nav__link promo-list__link" href="#">Новые поступления</a>
           </li>
@@ -69,7 +71,7 @@
         <form class="order__filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="order__field">
             <div class="container">
-              <legend class="order__field-name">Тип</legend>
+              <span class="order__field-name">Тип</span>
               <ul class="order__list">
                 <li class="order__item">
                   <input class="visually-hidden order__input order__input--radio" type="radio" name="product-type" value="accessory" id="order-accessory" checked>
@@ -85,7 +87,7 @@
 
           <fieldset class="order__field color">
             <div class="container">
-              <legend class="order__field-name color__field-name">Цвет</legend>
+              <span class="order__field-name color__field-name">Цвет</span>
               <ul class="order__list color__list">
                 <li class="order__item color__item">
                   <input class="visually-hidden order__input order__input--checkbox" type="checkbox" name="color-white" id="color-white" checked>
@@ -117,7 +119,7 @@
 
           <fieldset class="order__field user">
             <div class="container">
-              <legend class="order__field-name user__field-name">ФИО</legend>
+              <span class="order__field-name user__field-name">ФИО</span>
               <ul class="order__list user__list">
                 <li class="order__item user__item">
                   <label class="order__label user__label" for="first-name">Имя:</label>
@@ -138,7 +140,7 @@
           <div class="form-contacts">
             <div class="container">
               <fieldset class="order__field form-contacts__field">
-                <legend class="order__field-name form-contacts__field-name">Тел</legend>
+                <span class="order__field-name form-contacts__field-name">Тел</span>
                 <input class="order__input form-contacts__input" type="tel" id="phone" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Поле ввода номера телефона" required>
                 <svg class="form-contacts__image form-contacts__image--phone" width="25" height="24">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -146,7 +148,7 @@
               </fieldset>
 
               <fieldset class="order__field form-contacts__field">
-                <legend class="order__field-name form-contacts__field-name form-contacts__field-name--email">E-mail</legend>
+                <span class="order__field-name form-contacts__field-name form-contacts__field-name--email">E-mail</span>
                 <input class="order__input form-contacts__input form-contacts__input--email" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" size="30" placeholder="Ваш Email*" aria-label="Поле ввода почтового адреса" required>
                 <svg class="form-contacts__image form-contacts__image--email" width="32" height="32">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -157,7 +159,7 @@
 
           <fieldset class="order__field">
             <div class="container">
-              <legend class="order__field-name order__field-name--more">Доп</legend>
+              <span class="order__field-name order__field-name--more">Доп</span>
               <textarea class="order__input order__input--area" name="extra" rows="5" cols="25" aria-label="Поле ввода пожеланий к заказу" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
@@ -216,5 +218,6 @@
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.js"></script>
     <script>svg4everybody()</script>
+    <script src="js/main.js"></script>
   </body>
 </html>
