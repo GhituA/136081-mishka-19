@@ -9,6 +9,7 @@
 }
 
 .social__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +17,10 @@
   height: 38px;
 
   color: #231f20;
+}
+
+.social__link::after {
+  @include blank-pseudo;
 }
 
 .social__link:hover,

@@ -123,6 +123,7 @@
 .featured__content {
   @media (min-width: $tablet-width) {
     width: 292px;
+    margin-bottom: 135px;
   }
 
   @media (min-width: $desktop-width) {

@@ -61,6 +61,7 @@
 }
 
 .categories__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,10 @@
   &--dark {
     background-color: $green--dark;
   }
+}
+
+.categories__link::after {
+  @include blank-pseudo;
 }
 
 .categories__link:hover,
@@ -126,6 +131,7 @@
 
 .categories__text::after {
   content: "  ";
+  display: block;
   position: absolute;
   right: 36px;
   top: 50%;
