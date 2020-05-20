@@ -123,6 +123,24 @@
   }
 }
 
+.contacts__link {
+  padding-bottom: 3px;
+
+  text-decoration: none;
+  color: $gray--text;
+  border-bottom: 1px solid $green--lightest;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $green--darken;
+  border-bottom: 1px solid $green--darken;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
+}
+
 .contacts__map {
   position: relative;
 
