@@ -24,3 +24,13 @@
     padding-bottom: 32px;
   }
 }
+
+@mixin blank-pseudo {
+  content: "  ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -20,13 +20,13 @@
 .main-nav--js .user-list,
 .main-nav--js .promo-list,
 .main-nav--js .main-nav__delivery, {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .main-nav__wrapper--closed {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -36,6 +36,14 @@
   flex-direction: column;
 
   @include list-reset;
+}
+
+.main-nav__link {
+  position: relative;
+}
+
+.main-nav__link::after {
+  @include blank-pseudo;
 }
 
 .main-nav__link:hover,

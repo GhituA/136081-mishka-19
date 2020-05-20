@@ -144,30 +144,30 @@
 
           <div class="form-contacts">
             <div class="container">
-              <fieldset class="order__field form-contacts__field">
-                <span class="order__field-name form-contacts__field-name">Тел</span>
-                <input class="order__input form-contacts__input" type="tel" id="phone" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Поле ввода номера телефона" required>
+              <div class="order__field form-contacts__field">
+                <label class="order__field-name form-contacts__field-name" for="phone">Тел</label>
+                <input class="order__input form-contacts__input" type="tel" id="phone" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="form-contacts__image form-contacts__image--phone" width="25" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
-              </fieldset>
+              </div>
 
-              <fieldset class="order__field form-contacts__field">
-                <span class="order__field-name form-contacts__field-name form-contacts__field-name--email">E-mail</span>
-                <input class="order__input form-contacts__input form-contacts__input--email" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" size="30" placeholder="Ваш Email*" aria-label="Поле ввода почтового адреса" required>
+              <div class="order__field form-contacts__field">
+                <label class="order__field-name form-contacts__field-name form-contacts__field-name--email" for="email">E-mail</label>
+                <input class="order__input form-contacts__input form-contacts__input--email" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" size="30" placeholder="Ваш Email*" required>
                 <svg class="form-contacts__image form-contacts__image--email" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
-              </fieldset>
+              </div>
             </div>
           </div>
 
-          <fieldset class="order__field">
+          <div class="order__field">
             <div class="container">
-              <span class="order__field-name order__field-name--more">Доп</span>
-              <textarea class="order__input order__input--area" name="extra" rows="5" cols="25" aria-label="Поле ввода пожеланий к заказу" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <label class="order__field-name order__field-name--more" for="textarea">Доп</label>
+              <textarea class="order__input order__input--area" name="extra" rows="5" cols="25" id="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-          </fieldset>
+          </div>
           <div class="order__wrapper container">
             <small class="order__legend">
               <sup>*</sup>Поля обязательны для заполнения
@@ -179,7 +179,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper container">
+      <div class="page-footer__wrapper page-footer__wrapper--form container">
         <a class="page-footer__logo" href="index.html"  aria-label="Логотип интернет-магазина «Мишка»">
           <svg class="page-footer__logo-image" width="102" height="34">
             <use xlink:href="#logo-footer"></use>
