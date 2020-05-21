@@ -34,7 +34,12 @@
 }
 
 .page-header__logo {
+  position: relative;
   line-height: 0;
+}
+
+.page-header__logo::after {
+  @include blank-pseudo;
 }
 
 .page-header__logo img {
@@ -54,13 +59,13 @@
 
 a.page-header__logo[href]:hover,
 a.page-header__logo[href]:focus {
-  opacity: 60%;
+  opacity: 0.6;
   cursor: pointer;
   transition: 0.2s;
 }
 
 a.page-header__logo[href]:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .page-header__toggle {

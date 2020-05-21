@@ -46,18 +46,15 @@
 .catalog__item:hover .catalog__description,
 .catalog__item:focus .catalog__description,
 .catalog__item:focus-within .catalog__description {
-  @media (min-width: $tablet-width) {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__item:active .catalog__description {
-  @media (min-width: $tablet-width) {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__link {
+  position: relative;
   display: block;
 
   font-weight: bold;
@@ -67,6 +64,10 @@
   &--title {
     margin-bottom: 10px;
   }
+}
+
+.catalog__link::after {
+  @include blank-pseudo;
 }
 
 .catalog__link:hover,
@@ -213,6 +214,7 @@
 }
 
 .catalog__cart {
+  position: relative;
   color: #444444;
   opacity: 0.2;
 
@@ -225,4 +227,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.catalog__cart::after {
+  @include blank-pseudo;
 }

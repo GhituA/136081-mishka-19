@@ -25,6 +25,7 @@
 }
 
 .page-footer__logo {
+  position: relative;
   display: none;
   color: #231f20;
 
@@ -32,6 +33,10 @@
     display: block;
     margin-right: 74px;
   }
+}
+
+.page-footer__logo::after {
+  @include blank-pseudo;
 }
 
 .page-footer__logo[href]:hover,
